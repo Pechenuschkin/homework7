@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         // Task # 1
         System.out.println(" Task # 1");
-        int firstFriday = 2;
-        for (int i = 1; i <= 31; i++) {
+        int firstFriday = 1;
+        for (int i = 1; i <= 31 ; i++) {
             if ((i - firstFriday) % 7 == 0)
                 System.out.println(" Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет");
         }
@@ -35,7 +35,7 @@ public class Main {
         int freDay = 5;
         int costDay = 100;
         int dey = 0;
-        while (budget > 100) {
+        while (budget >= 100) {
             dey++;
             freDay++;
             if (freDay % 5 == 0) {
@@ -49,7 +49,7 @@ public class Main {
         int freDay1 = 5;
         int costDay1 = 100;
         int dey1 = 0;
-        for (; budget1 > 100; dey1++) {
+        for (; budget1 >= 100; dey1++) {
             freDay1++;
             if (freDay1 % 5 == 0) {
                 continue;
